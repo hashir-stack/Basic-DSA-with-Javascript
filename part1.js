@@ -58,3 +58,16 @@
                 // "1" / 1 = 1 Output
 
 // ---------------------------------------------------------------------------------------------------------------------------------------
+
+// Converting the one data type into another data type is called "Type Casting or Type Conversion".
+
+// prompt() always returns string → Use Number(prompt("age")) to get data type as number .
+// For Example ==> let age = Number(prompt("Enter your age here ...."));
+
+        // * if user enter "20" or "30" or "40" etc  strings just like this then we can change the data type into number if it is possible then only.
+
+        // * if user enter "hashir" or "ali" etc strings just like this then we can't change the data type into number. The output will be Nan because it not possible to change such such type of stings into number.
+
+            // Number("abc") = NaN (Not a Number).
+
+// ---------------------------------------------------------------------------------------------------------------------------------------
