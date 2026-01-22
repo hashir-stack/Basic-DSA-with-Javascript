@@ -109,3 +109,13 @@
                 //  console.log(a ,b ) output will be (20 ,10)
 
 //-----------------------------------------------------------------------------------------------------------------------------------------
+// 
+
+
+// 5. Arithmetic Operators
+// Operator 	What it does	            Example
+//   +	          Add	                   5 + 3 = 8
+//   -	          Subtract	               5 - 3 = 2
+//   *	          Multiply	               5 * 3 = 15
+//   /	          Divide (float result)	   12 / 22 = 0.545... 
+//   %	          Remainder (modulo)	   7 % 2 = 1
