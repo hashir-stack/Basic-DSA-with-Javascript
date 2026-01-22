@@ -71,3 +71,41 @@
             // Number("abc") = NaN (Not a Number).
 
 // ---------------------------------------------------------------------------------------------------------------------------------------
+
+// 4. Swap Two Variables (3 Easy Methods)
+
+// Method I : with extra variable
+
+            // let a = 10 ;
+            // let b = 20;
+            // let c; // a empty variable
+
+            // c = a ; // c = 10(copy the value of a) , a = 10
+            // a = b ; // a = 20  , b = 20
+            // b = c ; // b = 10  , c = 10
+            // and swaping is done
+
+            // console.log(a ,b ) output will be (20 ,10)
+
+// // Method II : without extra variable
+
+                // let a = 10 ;
+                // let b = 20;
+                // a = a + b ; //new value of a = 30
+                // b = a - b ; //new value of b = 10  because (30 - 20 = 10)
+                // a = a - b ; //new value of a = 20 because (30 - 10)
+                // and swaping is done
+
+                //  console.log(a ,b ) output will be (20 ,10)
+
+// Method II : Destructuring (modern)
+
+                // let a = 10 ;
+                // let b = 20;
+
+                // [a, b] = [b, a];
+                // and swaping is done
+
+                //  console.log(a ,b ) output will be (20 ,10)
+
+//-----------------------------------------------------------------------------------------------------------------------------------------
