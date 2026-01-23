@@ -119,3 +119,34 @@
 //   *	          Multiply	               5 * 3 = 15
 //   /	          Divide (float result)	   12 / 22 = 0.545... 
 //   %	          Remainder (modulo)	   7 % 2 = 1
+
+
+// ---------------------------------------------------------------------------------------------------------------------------------------
+// 6. Comparison Operators (Return true/false):
+
+// >, <, >=, <=
+// != (not equal), !== (strict not equal)
+// Examples:
+            // 5 > 3 → true
+            // "5" == 5 → true (loose)
+            // "5" === 5 → false (strict)
+// The primary difference is that the != (loose not equal) operator performs type coercion (automatic type conversion) before comparison, whereas the !== (strict not equal) operator does not perform type coercion, meaning it checks if both the value and the data type are different.
+
+// same as == (loose equality) VS === (strict equality) :
+
+//     In JavaScript, == (loose equality) compares values for equality after converting them to a common type (type coercion). In contrast, === (strict equality) compares both the value and the data type without coercion, returning true only if both match. === is generally preferred for safer, more predictable code. 
+
+                    // Key Differences:
+                    // Type Coercion: == converts types (e.g., '5' == 5 is true). === does not (e.g., '5' === 5 is false).
+                    // Performance: === is slightly faster because it skips the type conversion step.
+                    // Examples:
+                    // 0 == false // true
+                    // 0 === false // false
+                    // null == undefined // true
+                    // null === undefined // false 
+                    // Best Practice: Always use === to avoid unexpected bugs caused by implicit type coercion
+// ----------------------------------------------------------------------------------------------------------------------------------------
+
+// 7. Logical Operators
+// && (AND): Both true → true.
+// || (OR): Any true → true.
