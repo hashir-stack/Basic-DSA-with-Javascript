@@ -150,3 +150,37 @@
 // 7. Logical Operators
 // && (AND): Both true → true.
 // || (OR): Any true → true.
+
+//----------------------------------------------------------------------------------------------------------------------------------------
+
+
+// 8. Unary Operators (++, --)
+// Postfix (a++): Use old value, then add 1.
+// Prefix (++a): Add 1, then use new value.
+// Works on booleans: true++ = 2.
+
+// For example : Post increament a++
+//              let a = 10 ;
+                // console.log(a++) output=>10
+                // console.log(a) output=>11
+
+//  For example : Pre increament ++a
+
+            // let a = 10 ;
+                // console.log(++a) output=>11
+                // console.log(a) output=>11
+// --------------------------------------------------------------------------------------------------
+
+// 9. Math Functions (Super Useful!)
+//   Function	                Job	                          Example
+// Math.round(x)	        Nearest whole	                          10.6 → 11, 10.3 → 10 
+// Math.ceil(x)	           Up to next whole	                          10.1 → 11 
+// Math.floor(x)	      Down to previous whole	                  10.9 → 10 
+// Math.trunc(x)	      Cut decimal	                              18.9 → 18 
+// Math.pow(x,y)	       Power	                                  Math.pow(2,5) = 32 
+// Math.sqrt(x)	           Square root	                              Math.sqrt(25) = 5 
+// Math.abs(x)	            Positive	                              Math.abs(-5) = 5 
+// Math.max(a,b,c)	        Biggest	                                  Math.max(7,8,65) = 78 
+// Math.min(a,b,c)	         Smallest	                              Math.min(7,8,65) = 7 
+// Math.random()	         Random                                   0 to <1	0.123... 
+// x.toFixed(2)	        2 decimals (string)                           8.098.toFixed(2) = "8.10"
