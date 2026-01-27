@@ -208,3 +208,63 @@
 
 // num > 0? → No → :
 // num < 0? → No → "Zero"
+
+// --------------------------------------------------------------------------------------------------------------------------------------
+// Switch Case
+// Syntax:
+
+// javascript
+
+
+// let day = 2;
+// switch(day) {
+//     case 1: 
+//         console.log("Monday");
+//         break;
+//     case 2:
+//         console.log("Tuesday");  // Executes  
+//         break;
+//     default:
+//         console.log("Invalid");
+// }
+// Key Features:
+
+// Exact match only (constant values) 
+// break prevents fall-through 
+// Multiple cases for same execution:
+// javascript
+
+
+// case 1:
+// case 2: 
+// case 3:
+//     console.log("Monday");  // All 1,2,3 → Monday  
+//     break;
+// Switch with Expressions (Advanced):
+
+// javascript
+
+
+// switch(true) {
+//     case 19 > 5:
+//         console.log("Hello");
+//         break;  // Executes first  
+//     case 10 > 5:
+//         console.log("Hi");
+//         break;
+// }
+// 8. Switch Precision Issue
+// Problem: Floats don't match exactly
+
+// javascript
+
+
+// let num = 0.1 + 0.2;  // 0.30000000000000004  
+// switch(num) {
+//     case 0.3:  // Never matches!
+//         console.log("Match");
+//         break;
+//     default:
+//         console.log("Namaste");  // Executes  
+// }
+// Solution: Research "JavaScript floating point precision"
