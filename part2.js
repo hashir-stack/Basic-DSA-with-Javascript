@@ -177,3 +177,34 @@
 // 23 ÷ 20 = 1 note (20 used, 3 left)
 // 3 ÷ 2 = 1 note (2 used, 1 left)
 // 1 note of 1  
+
+//--------------------------------------------------------------------------------------------------------------------------------------
+// Ternary Operator
+// Syntax: condition ? true_code : false_code 
+
+// javascript
+
+
+// console.log(12 > 13 ? "Hello" : "Huhuh");  // "Huhuh"  
+// console.log(112 > 13 ? "Hello" : "Huhuh"); // "Hello"
+// Inline Usage:
+
+// javascript
+
+
+// console.log(12 > 13 ? "Hello" : "Huhuh");  // Single line  
+// 6. Nested Ternary Operator
+// Multiple Conditions:
+
+// javascript
+
+
+// let num = 0;
+// console.log(
+//     num > 0 ? "Positive" : 
+//     num < 0 ? "Negative" : "Zero"
+// );  // "Zero"  
+// Logic Flow:
+
+// num > 0? → No → :
+// num < 0? → No → "Zero"
