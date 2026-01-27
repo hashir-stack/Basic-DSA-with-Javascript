@@ -70,3 +70,110 @@
 // Pro Tip: Range questions common in interviews (movie ratings, grades)
 
 // -----------------------------------------------------------------------------------------------------------------------------
+//Problem :
+// Age-Based Ticket Pricing
+// You’re building a cinema app:
+// - Children (age 0–12) → ₹200
+// - Teenagers (13–19) → ₹300
+// - Adults (20–59) → ₹500
+// - Seniors (60+) → ₹250
+
+// let age = 65;
+// if (age >= 0 && age <= 12) {
+//     console.log("Ticket Price: ₹200");
+// } else if (age >= 13 && age <= 19) {
+//     console.log("Ticket Price: ₹300");
+// } else if (age >= 20 && age <= 59) {
+//     console.log("Ticket Price: ₹500");
+// } else if (age >= 60) {
+//     console.log("Ticket Price: ₹250");
+// } else {
+//     console.log("Invalid age entered");
+//}
+
+//-----------------------------------------------------------------------------------------------------------------------------------------
+// Electricity Bill Problem (Tiered Pricing)
+// Slab Rates:
+// 0-100 units: ₹4.2/unit
+// 101-200 units: ₹6/unit  
+// 201-400 units: ₹8/unit
+// >400 units: ₹13/unit  
+
+// Bottom-to-Top Approach (Key Insight):
+
+// let unit = Number(prompt("Enter electricity units"));
+// let amount = 0;
+// if (unit > 400) {
+//     amount += (unit - 400) * 13;  // Highest slab first  
+//     unit = 400;  // Reset for next slab
+// }
+// if (unit > 200) {
+//     amount += (unit - 200) * 8;
+//     unit = 200;
+// }
+// if (unit > 100) {
+//     amount += (unit - 100) * 6;
+//     unit = 100;
+// }
+// amount += unit * 4;  // Base slab  
+// console.log(amount);
+// Example: 700 units
+
+// 700-400 = 300 × 13 = 3900 (unit=400)
+// 400-200 = 200 × 8 = 1600 (unit=200)
+// 200-100 = 100 × 6 = 600 (unit=100)
+// 100 × 4 = 400
+// Total: 6500 
+// Why Bottom-to-Top? Natural progression, handles partial slabs correctly
+
+// Another Way to solve
+
+// function calculateBill(units) {
+//     let bill = 0;
+
+//     if (units <= 100) {
+//         bill = units * 4.2;
+//     } else if (units <= 200) {
+//         bill = (100 * 4.2) + ((units - 100) * 6);
+//     } else if (units <= 400) {
+//         bill = (100 * 4.2) + (100 * 6) + ((units - 200) * 8);
+//     } else {
+//         bill = (100 * 4.2) + (100 * 6) + (200 * 8) + ((units - 400) * 13);
+//     }
+
+//     return bill;
+// }
+
+// // Example usage:
+// let unitsConsumed = 450;
+// console.log("Total Bill: ₹" + calculateBill(unitsConsumed));
+//----------------------------------------------------------------------------------------------------------------------------------------
+//INR Denomination Problem
+// Problem: Break amount into notes (500 → 200 → 100 → 50 → 20 → 10 → 5 → 2 → 1)
+
+// javascript
+
+
+// let amount = Number(prompt("Enter amount"));
+// let temp = amount;
+// if (amount >= 500) {
+//     let notes = Math.floor(amount / 500);
+//     console.log(`${notes} notes of 500`);
+//     amount %= 500;  // remainder  
+// }
+// // Repeat for 200, 100, 50, 20, 10, 5, 2
+// console.log(`${amount} notes of 1`);  // Final remainder  
+// Math Operations:
+
+// Math.floor(num / denom) = Number of notes 
+// amount % denom = Remainder 
+// Example: 4823
+
+
+
+// 4823 ÷ 500 = 9 notes (4500 used, 323 left)
+// 323 ÷ 200 = 1 note (200 used, 123 left) 
+// 123 ÷ 100 = 1 note (100 used, 23 left)
+// 23 ÷ 20 = 1 note (20 used, 3 left)
+// 3 ÷ 2 = 1 note (2 used, 1 left)
+// 1 note of 1  
