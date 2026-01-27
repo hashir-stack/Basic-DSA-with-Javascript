@@ -268,3 +268,13 @@
 //         console.log("Namaste");  // Executes  
 // }
 // Solution: Research "JavaScript floating point precision"
+
+// Key Takeaways
+// prompt() → String → Always convert with Number() 
+// isNaN() for input validation 
+// Range Problems: Use if-elseif chains 
+// Tiered Pricing: Bottom-to-Top approach 
+// Denomination: floor(divide) + modulo 
+// Ternary: condition ? true : false 
+// Switch: Exact matches, break essential 
+// DRY Principle: Variables eliminate repetition
