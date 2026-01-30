@@ -128,7 +128,7 @@
 
 // for (let i= 1; i=< n ; i++){
 //     for(let j = 1 ; j =< (n-i) + 1 ; j++){
-//         process.stdout.write(j + ' ');
+//         process.stdout.write('* ');
 //     }
 //     console.log();
 // }
@@ -137,3 +137,38 @@
 // Logic 2: Outer loop i=n; i>=1; i--, inner j<=i (start from bottom). 
 
 // Multiple ways exist—pick what clicks! 
+
+// ------------------------------------------------------------------------------------------------
+// 5. Mirror Right Angle Triangle
+
+//     * 
+//    * * 
+//   * * * 
+//  * * * * 
+// * * * * * 
+// Logic: Combo of inverted (spaces) + right angle (stars).
+
+// First inner loop: j <= (n - i) → spaces (push stars right).
+
+// Second inner loop: j <= i → stars.
+
+// console.log() after both loops.  
+
+// Dry Run (n=5, i=1): 4 spaces + 1 star → next line.
+// i=2: 3 spaces + 2 stars → next line. 
+
+// solution:
+
+// const prompt = require('prompt-sync')();
+// let n = parseInt(prompt('Enter n: '));
+
+// for (let i= 1; i=< n ; i++){
+//     for(let j = 1 ; j =< n-i ; j++){
+//         process.stdout.write(" "); (this loop is for space)
+//     }
+    // for (let j = 1 ; j <= i ; j++){
+    //     process.stdout.write("* "); (this loop is for star)
+    // }
+//     console.log();
+// }
+// -------------------------------------------------------------------------------------------------
