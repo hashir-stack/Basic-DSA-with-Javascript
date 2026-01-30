@@ -208,4 +208,34 @@
 //     }
 //     console.log();
 // }
+// ------------------------------------------------------------------------------------------------
 
+// 7. V Pattern
+
+// *       * 
+//  *     * 
+//   *   *  
+//    * *   
+//     *    
+// Logic: Wider base (columns = 2*n - 1).
+
+// Left diagonal: i === j
+
+// Right diagonal: i + j === 2*n
+
+// Fill rest with spaces. 
+
+// solution:
+// const prompt = require('prompt-sync')();
+// let n = parseInt(prompt('Enter n: '));
+
+// for (let i= 1; i=< n ; i++){
+//     for(let j = 1 ; j =< 2*n-1 ; j++){
+//         if( i == j || i + j = 2 * n){
+//          process.stdout.write('* '); (for star)
+// }else{
+    //  process.stdout.write(' '); (for space)
+// }
+//     }
+//     console.log();
+// }
