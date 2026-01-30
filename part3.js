@@ -66,3 +66,48 @@
 //     console.log();
 // }
 // -------------------------------------------------------------------------------------------------
+
+// Number Pattern (1 to i)
+
+// 1
+// 1 2
+// 1 2 3
+// 1 2 3 4
+// 1 2 3 4 5
+
+// Code: Print j instead of *. j resets to 1 each row
+
+// const prompt = require('prompt-sync')();
+// let n = parseInt(prompt('Enter n: '));
+
+// for (let i= 1; i=< n ; i++){
+//     for(let j = 1 ; j =< 1 ; j++){
+//         process.stdout.write(j + ' ');
+//     }
+//     console.log();
+// }
+
+// ------------------------------------------------------------------------------------------------
+
+// Alphabet Pattern (A to ...)
+
+// A
+// A B
+// A B C
+// A B C D
+// A B C D E
+// Logic: Use ASCII. Capital A = 65.
+
+// javascript
+// Copy
+// let ch = 65;  // 'A'
+// for(let i=1; i<=n; i++) {
+//     for(let j=1; j<=i; j++) {
+//         process.stdout.write(String.fromCharCode(ch++) + ' ');
+//     }
+//     console.log();
+//     ch = 65;  // Reset for next row
+// }
+// Key: ch resets per row (new inner loop).
+
+// -------------------------------------------------------------------------------------------------
