@@ -172,3 +172,40 @@
 //     console.log();
 // }
 // -------------------------------------------------------------------------------------------------
+
+// 6. X Pattern (Odd n only, e.g., n=5)
+
+// *   * 
+//  * * 
+//   *  
+//  * * 
+// *   * 
+// Logic: Base n x n pattern + condition inside:
+
+// javascript
+// Copy
+// if(i === j || i + j === n + 1) {
+//     process.stdout.write('* ');
+// } else {
+//     process.stdout.write('  ');  // 2 spaces to align
+// }
+// Left diagonal: i === j
+
+// Right diagonal: i + j === n + 1
+// Even n breaks center.  
+
+// solution:
+// const prompt = require('prompt-sync')();
+// let n = parseInt(prompt('Enter n: '));
+
+// for (let i= 1; i=< n ; i++){
+//     for(let j = 1 ; j =< n ; j++){
+//         if( i == j || i+j = n+1){
+//          process.stdout.write('* '); (for star)
+// }else{
+    //  process.stdout.write(' '); (for space)
+// }
+//     }
+//     console.log();
+// }
+
