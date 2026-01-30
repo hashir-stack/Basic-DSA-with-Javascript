@@ -41,3 +41,28 @@
 // Dry Run Logic: Outer i runs n times. Each time, inner j runs n times (prints n stars), then console.log() → next row
 
 // ------------------------------------------------------------------------------------------------
+
+// 3. Right Angle Triangle (Increasing Stars)
+// plaintext
+// Copy
+// * 
+// * * 
+// * * * 
+// * * * * 
+// * * * * *  (n = 5)
+// Logic: Inner loop runs j <= i (stars = current row number). 
+
+// Code: Change base pattern's inner condition to j <= i.
+
+// for exmaple :
+
+// const prompt = require('prompt-sync')();
+// let n = parseInt(prompt('Enter n: '));
+
+// for (let i= 1; i=< n ; i++){
+//     for(let j = 1 ; j =< 1 ; j++){
+//         process.stdout.write('* ');
+//     }
+//     console.log();
+// }
+// -------------------------------------------------------------------------------------------------
