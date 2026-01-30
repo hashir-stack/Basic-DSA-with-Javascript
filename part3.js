@@ -111,3 +111,29 @@
 // Key: ch resets per row (new inner loop).
 
 // -------------------------------------------------------------------------------------------------
+
+// 4. Inverted Right Angle Triangle (Decreasing Stars)
+
+// * * * * *
+// * * * * 
+// * * * 
+//  * * 
+//  * 
+// Logic 1: j <= (n - i + 1) (stars decrease by 1 each row). 
+
+// solution:
+
+// const prompt = require('prompt-sync')();
+// let n = parseInt(prompt('Enter n: '));
+
+// for (let i= 1; i=< n ; i++){
+//     for(let j = 1 ; j =< (n-i) + 1 ; j++){
+//         process.stdout.write(j + ' ');
+//     }
+//     console.log();
+// }
+
+
+// Logic 2: Outer loop i=n; i>=1; i--, inner j<=i (start from bottom). 
+
+// Multiple ways exist—pick what clicks! 
