@@ -58,3 +58,32 @@
 //     arr[i] = Number(prompt("Enter value"));
 // }
 // Key: i < arr.length iterates correctly from 0 to length-1 
+
+// -------------------------------------------------------------------------------------------------------------
+
+// 5. Sum of Array Elements
+// Concept: Accumulator variable outside loop 
+
+// let arr = [10, 20, 30, 40, 50];
+// let sum = 0; // ← Outside loop (CRITICAL)         (agar array loop  ke andar raha to wapas se wo empty  or zero  ho jayega)
+
+// for(let i = 0; i < arr.length; i++) {
+//     sum = sum + arr[i]; // Accumulate
+// }
+// console.log(sum); // 150
+// Why outside? Inside loop = resets to 0 each iteration 
+// --------------------------------------------------------------------------------------------------------------
+
+// 6. Find Maximum Element
+// Algorithm: Assume first element is max, compare with rest 
+
+
+// let arr = [13, 78, 2, 100, 45];
+// let max = arr[0]; // Start with first
+
+// for(let i = 1; i < arr.length; i++) {
+//     if(arr[i] > max) {
+//         max = arr[i];
+//     }
+// }
+// console.log(max); // 100
