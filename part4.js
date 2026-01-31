@@ -87,3 +87,44 @@
 //     }
 // }
 // console.log(max); // 100
+// ----------------------------------------------------------------------------------------------------------------
+
+// 7. Find Second Maximum
+// Two variables approach 
+ 
+// let arr = [10, 30, 40, 56, 43, 78];
+// let max = Math.max(arr[0], arr[1]);
+// let secMax = Math.min(arr[0], arr[1]);
+
+// for(let i = 2; i < arr.length; i++) {
+//     if(arr[i] > max) {
+//         secMax = max;
+//         max = arr[i];
+//     }
+//     else if(arr[i] > secMax && arr[i] != max) { // Corner case handling
+//         secMax = arr[i];
+//     }
+// }
+// Corner cases: Handle duplicates (40,40 → secMax=30, not 40) 
+
+// let arr = [10, 30, 40, 56, 43, 78];
+// let max = Math.max(arr[0], arr[1]);
+// let secMax = Math.min(arr[0], arr[1]);
+
+// for(let i = 2; i < arr.length; i++) {
+//     if(arr[i] > max) {
+//         secMax = max;
+//         max = arr[i];
+//     }
+//     else if(arr[i] > secMax && arr[i] < max) { // Corner case handling
+//         secMax = arr[i];
+//     }
+// }
+// - < max → ensures second max is strictly smaller than the max (more explicit and safer).
+
+// 🔑 Simple Difference:
+// - != max → avoids duplicates of the maximum.
+// - < max → ensures second max is strictly smaller than the max (more explicit and safer).
+// 👉 In practice, both usually give the same result, but the second version (< max) is more correct and clear, because "second maximum" should always be less than the maximum.
+
+
