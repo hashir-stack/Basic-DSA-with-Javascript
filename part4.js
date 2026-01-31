@@ -126,5 +126,70 @@
 // - != max → avoids duplicates of the maximum.
 // - < max → ensures second max is strictly smaller than the max (more explicit and safer).
 // 👉 In practice, both usually give the same result, but the second version (< max) is more correct and clear, because "second maximum" should always be less than the maximum.
+// -------------------------------------------------------------------------------------------------------------
+// 8. Reverse Array (Two Methods)
+
+// Method 1: Extra Space (O(n) space) 
+
+// let arr = [10, 20, 30, 40, 50];
+// let temp = new Array(arr.length);
+
+// for(let i = 0, j = arr.length-1; i < arr.length; i++, j--) {
+//     temp[i] = arr[j];
+// }
+
+// Method 2: In-place Swap (O(1) space - BETTER) 
+
+// let arr = [10, 20, 30, 40, 50];
+// let i = 0;
+// let j = arr.length - 1;
+
+// while(i < j) {
+//     // Swap arr[i] and arr[j]
+//     let temp = arr[i];
+//     arr[i] = arr[j];
+//     arr[j] = temp;
+//     i++;
+//     j--;
+// }
+// -----------------------------------------------------------------------------------------------------------------
+
+// 9. Move Zeros to Left (Two Pointer)
+// Two pointers start together 
+
+// let arr = [1, 0, 1, 0, 0, 1, 1, 0];
+// let i = 0, j = 0;
+
+// while(i < arr.length) {
+//     if(arr[i] == 0) { // Found zero
+//         // Swap with j
+//         let temp = arr[i];
+//         arr[i] = arr[j];
+//         arr[j] = temp;
+//         j++;
+//     }
+//     i++;
+// }
+// // Result: [0,0,0,0,1,1,1,1]
+
+// Logic: i searches for 0s, j marks next 1 position 
+
+// --------------------------------------------------------------------------------------------------------------
+
+// 10. Homework Problems
+// Minimum element (similar to max, use <)
+
+// Second minimum (similar to second max, use >)
+
+// Move negatives to left, positives to right (same as zeros/ones, use < 0) 
+
+// -----------------------------------------------------------------------------------
+// Key Takeaways
+
+// Arrays are dynamic in JS (no fixed size issues)
+// Zero-based indexing always
+// Two-pointer techniques master for partitioning problems
+// Accumulator outside loop for sum/max operations
+// In-place operations preferred over extra space 
 
 
