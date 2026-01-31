@@ -26,3 +26,35 @@
 // let arr = [10, 20, 30];
 // arr[7] = 150;                               // Creates empty slots (undefined) at indices 4,5,6
 // console.log(arr); //                        output=> [10, 20, 30, undefined, undefined, undefined, undefined, 150]
+
+// -------------------------------------------------------------------------------------------------------------
+
+// 3. Array Definition (Data Structure)
+
+// Array = Linear Data Structure that stores multiple values continuously in memory  
+
+// Linear: One after another (vs Tree/Graph = non-linear) 
+// Continuous: Adjacent memory locations (vs LinkedList = non-contiguous) 
+
+
+// Memory: [10][20][30][40]  ← Continuous (Array)
+// vs     [10]xxx[20]xx[30]  ← Non-continuous (LinkedList)
+
+// ----------------------------------------------------------------------------------------------------------------
+
+// 4. Taking Input Dynamically (from prompt)
+
+// Problem: Take 5 values from user and store in array.
+
+// Naive way (bad for large arrays):
+
+// arr[0] = prompt("Enter value 1");
+// arr[1] = prompt("Enter value 2");
+// // ... repeat 5 times ❌
+// Loop way (scalable):
+
+// let arr = [];
+// for(let i = 0; i < 5; i++) {
+//     arr[i] = Number(prompt("Enter value"));
+// }
+// Key: i < arr.length iterates correctly from 0 to length-1 
