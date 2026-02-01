@@ -192,4 +192,28 @@
 // Accumulator outside loop for sum/max operations
 // In-place operations preferred over extra space 
 
+// ---------------------------------------------------------------------------------------------
+
+// Advance Array Questions And Solutions:
+
+// Left Rotation by 1 Element
+// Problem: Rotate array [1, 2, 3, 4, 5] left by 1 → [2, 3, 4, 5, 1]. Each element shifts left; first goes to end.  
+
+// Intuition (Hit & Trial):
+// Start from index 0 (i=0).
+// Copy arr[i+1] to arr[i], increment i.
+// Loop until i < arr.length - 2 (avoids index out of bounds at last element).
+// First element (lost during shifts) is copied to end: copy = arr[0]; arr[arr.length-1] = copy. 
+
+// Code:
+
+// let arr = [1,2,3,4,5];
+// let copy = arr[0]; //1
+// for(let i=0; i < arr.length-1; i++) {
+//     arr[i] = arr[i+1];
+// }
+// arr[arr.length-1] = copy;
+// console.log(arr); // [2,3,4,5,1]
+
+// Key Insight: Shifting right-to-left preserves the first element via copy.
 
