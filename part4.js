@@ -217,3 +217,27 @@
 
 // Key Insight: Shifting right-to-left preserves the first element via copy.
 
+// -------------------------------------------------------------------------------------
+// Right Rotation by 1 Element
+// Problem: Rotate [1, 2, 3, 4, 5] right by 1 → [5, 1, 2, 3, 4]. Each element shifts right; last goes to start.  
+
+// Intuition:
+
+// Wrong approach: Starting from i=0 fails (overwrites propagate incorrectly).
+// Correct: Start from last index (i = arr.length-1), shift left-to-right.
+// Copy arr[i-1] to arr[i], decrement i.
+// Loop from i=arr.length-1 down to i>0 (avoids -1 index).
+// Last element (lost) copied to start: copy = arr[arr.length-1]; arr[0] = copy. 
+
+// Code:
+
+// let arr = [1,2,3,4,5];
+// let copy = arr[arr.length-1];
+// for(let i=arr.length-1; i>0; i--) {
+//     arr[i] = arr[i-1];
+// }
+// arr[0] = copy;
+// console.log(arr); // [5,1,2,3,4]       
+// ---------------------------------------------------------------------------------------
+// 
+                                            //  
