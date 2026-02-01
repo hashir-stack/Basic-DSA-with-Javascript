@@ -239,5 +239,24 @@
 // arr[0] = copy;
 // console.log(arr); // [5,1,2,3,4]       
 // ---------------------------------------------------------------------------------------
-// 
-                                            //  
+// Nested Looping (Key Prerequisite)
+// Concept: Outer loop runs repeated tasks; inner loop runs sub-tasks inside each iteration.  
+
+// Example: Print "Hello" 3 times, 4 times (12 total).
+
+// for(let j=1; j<=4; j++) {  // Outer: 4 executions
+//     console.log(`${j} Execution`);
+//     for(let i=1; i<=3; i++) {  // Inner: 3 "Hello" per execution
+//         console.log("Hello");
+//     }
+// }
+// Execution Flow:
+
+// j=1: Print "1 Execution" → Inner loop: Hello x3
+
+// j=2: Print "2 Execution" → Inner: Hello x3 (i resets to 1)
+
+// And so on. Total: 4 outer × 3 inner = 12 prints. 
+
+// Use Case: Repeat a full process (like rotation by 1) multiple times.
+                                     
