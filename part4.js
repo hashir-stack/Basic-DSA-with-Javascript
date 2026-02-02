@@ -259,4 +259,32 @@
 // And so on. Total: 4 outer × 3 inner = 12 prints. 
 
 // Use Case: Repeat a full process (like rotation by 1) multiple times.
+
+// ------------------------------------------------------------------------------------------------
+//  Left Rotation by K Elements (Brute Force)
+
+// Problem: Rotate [1,2,3,4,5] left by k=2 → [3,4,5,1,2].  
+// Approach: Repeat "left rotation by 1" exactly k times using nested loops.
+// Outer loop: j from 0 to k-1.
+// Inner loop: Full left rotation by 1 code.  
+// Edge Case Handling: k %= arr.length (e.g., k=7 % 5=2; k=5 % 5=0 → no rotation). 
+
+// Code:
+
+// let arr = [1,2,3,4,5];
+// let k = prompt("Enter k");  // User input
+// k = k % arr.length;  // Handle edge cases
+// for(let j=0; j<k; j++) {
+//     let copy = arr[0];
+//     for(let i=0; i<arr.length-1; i++) {
+//         arr[i] = arr[i+1];
+//     }
+//     arr[arr.length-1] = copy;
+// }
+// console.log(arr);
+// Verification: k=2 → [3,4,5,1,2]; k=3 → [4,5,1,2,3]; k=5 → no change. 
+
+// Time Complexity: O(n × k) ≈ O(n²) worst case (inefficient). 
+
+// ---------------------------------------------------------------------------------------------
                                      
