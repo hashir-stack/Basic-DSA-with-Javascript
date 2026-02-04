@@ -21,3 +21,11 @@
 
 // mutable means doesn't change its original state.
 // -------------------------------------------------------------------------------------------------
+
+// 3. Immutability in Detail
+
+// Strings maintain their original state - changes require reassignment. 
+// s = s + " World" creates a new string (old string unchanged).  
+// Reassignment = new memory allocation.
+
+// ----------------------------------------------------------------------------------------------
