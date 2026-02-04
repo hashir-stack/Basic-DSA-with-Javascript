@@ -84,6 +84,23 @@
 // Problem 2: Print Characters in Reverse (Individual)
 
 // for(let i = s.length-1; i >= 0; i--) {
-//     console.log(s[i]);  output=> // s, i, r, e, h, S
+//     console.log(s[i]);  output=> // 
+//                                      s, 
+//                                      i, 
+//                                      r, 
+//                                      e, 
+//                                      h, 
+//                                      S
 // }  
 
+// ------------------------------------------------------------------------------------------------------
+// Problem 3: Print Complete String in Reverse
+
+// let reverse = "";
+// for(let i = s.length-1; i >= 0; i--) {
+//     reverse += s[i];  // "sirehS"
+// }
+// console.log(reverse);   
+// Note: Inefficient (reassigns memory n times for length n)
+
+// -------------------------------------------------------------------------------------------------------
