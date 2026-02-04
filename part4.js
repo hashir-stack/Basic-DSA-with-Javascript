@@ -270,7 +270,6 @@
 // Edge Case Handling: k %= arr.length (e.g., k=7 % 5=2; k=5 % 5=0 → no rotation). 
 
 // Code:
-
 // let arr = [1,2,3,4,5];
 // let k = prompt("Enter k");  // User input
 // k = k % arr.length;  // Handle edge cases
