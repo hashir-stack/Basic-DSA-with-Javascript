@@ -79,5 +79,11 @@
 // r,
 // i,
 // s
-
 // --------------------------------------------------------------------------------------------------------
+
+// Problem 2: Print Characters in Reverse (Individual)
+
+// for(let i = s.length-1; i >= 0; i--) {
+//     console.log(s[i]);  output=> // s, i, r, e, h, S
+// }  
+
