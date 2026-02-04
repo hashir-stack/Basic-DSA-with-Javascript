@@ -29,3 +29,28 @@
 // Reassignment = new memory allocation.
 
 // ----------------------------------------------------------------------------------------------
+
+// 4. Key String Properties & Methods
+// Method/Property          	      Description                                     	Example
+// length	                      Property (no ()), returns character count	            s.length → 6 for "Sheris" 
+// slice(start, end)	          Extracts substring (end exclusive), 
+//                                supports negative indices	                            s.slice(2,5) → "eri"; s.slice(-4, -1) → "ris"  
+// substring(start, end)	      Like slice but only positive indices, end exclusive	s.substring(2,5) → "eri" 
+// toUpperCase()	              Converts to uppercase	                                "sheris".toUpperCase() → "SHERIS" 
+// toLowerCase()	              Converts to lowercase	                                "SHERIS".toLowerCase() → "sheris" 
+// concat()	                      Joins strings	                                        "Sheris".concat(" World") → "Sheris World" 
+// trim()	                      Removes leading/trailing spaces	                    " Sheris ".trim() → "Sheris"  
+// charAt(index)	              Gets character at index	                            s.charAt(2) → "e" 
+// charCodeAt(index)	          Returns Unicode value of character	                "A".charCodeAt(0) → 65
+
+// Other methods (try yourself): 
+// indexOf(), 
+// lastIndexOf(), 
+// includes(), 
+// startsWith(), 
+// endsWith(), 
+// replace(), 
+// replaceAll(), 
+// split(). 
+
+// -----------------------------------------------------------------------------------------------------------------
