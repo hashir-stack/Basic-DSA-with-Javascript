@@ -202,3 +202,38 @@
 // Since you’re refining your skills and aiming for clarity and scalability, Program 2 is the better choice in real-world projects.
 
 // ----------------------------------------------------------------------------------------------
+
+// Problem 6: Frequency of Each Character (Bitmap Approach)
+
+// let s = prompt("Enter string");
+// let freq = new Array(128).fill(0);  // ASCII range
+
+// // Count frequency
+// for(let i = 0; i < s.length; i++) {
+//     let charCode = s.charCodeAt(i);
+//     freq[charCode]++;
+// }
+
+// // Print frequency
+// for(let i = 0; i < 128; i++) {
+//     if(freq[i] > 0) {
+//         console.log(String.fromCharCode(i) + ": " + freq[i]);
+//     }
+// }  
+//                                                              OR
+
+// Easy Way or method:-
+
+// let s = prompt("Enter string");
+// let freq = {};
+
+// // Count frequency
+// for (let i = 0; i < s.length; i++) {
+//     let ch = s[i];
+//     freq[ch] = (freq[ch] || 0) + 1;
+// }
+
+// // Print frequency
+// for (let key in freq) {
+//     console.log(key + ": " + freq[key]);
+// }
