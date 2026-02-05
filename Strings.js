@@ -100,7 +100,38 @@
 // for(let i = s.length-1; i >= 0; i--) {
 //     reverse += s[i];  // "sirehS"
 // }
-// console.log(reverse);   
+// console.log(reverse);
+
 // Note: Inefficient (reassigns memory n times for length n)
 
 // -------------------------------------------------------------------------------------------------------
+
+// Problem 4: Check Palindrome (Two Ways)
+
+// Naive (Inefficient):
+
+// let s = prompt("Enter string");
+// let reverse = "";
+// for(let i = s.length-1; i >= 0; i--) {
+//     reverse += s[i];
+// }
+// console.log(s === reverse ? "Palindrome" : "No Palindrome");
+
+// -------------------------------------------------------------------------------------------------------------------------------
+
+// Efficient (Two Pointer - O(n) time, O(1) space):
+
+// let s = prompt("Enter string");
+// let i = 0;
+// let j = s.length - 1;
+// let isPalindrome = true;
+
+// while(i < j) {
+//     if(s[i] !== s[j]) {
+//         isPalindrome = false;
+//         break;
+//     }
+//     i++;
+//     j--;
+// }
+// console.log(isPalindrome ? "Palindrome" : "No Palindrome");
