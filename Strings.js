@@ -166,15 +166,39 @@
 
 //  for(let i = 0; i < s.length; i++) {
 //      let charCode = s.charCodeAt(i);
-//     let strToggle = s[i];
+//      let strToggle = s[i];
 //     if(charCode >= 65 && charCode <= 90) {  // Capital
-//          toggle += strToggle.toLowerCase()  // +32 = small     } 
+//          toggle += strToggle.toLowerCase()  //  small 
 //     }else if(charCode >= 97 && charCode <= 122) {  // Small
-//          toggle += strToggle.toUpperCase()  // -32 = capital
+//          toggle += strToggle.toUpperCase()  // capital
 //      } 
 //      else {
 //         toggle += s[i];  // Non-letter
 //      }
 //  }
 //  console.log(toggle);
+
+// Program 1 (using charCodeAt and String.fromCharCode)
+// - Pros:
+// - Shows the underlying ASCII logic clearly (+32 for lowercase, -32 for uppercase).
+// - Useful for learning how character codes work.
+// - Slightly faster at a low level since it avoids extra function calls (toLowerCase() / toUpperCase()).
+// - Cons:
+// - Less intuitive for beginners—requires remembering ASCII ranges and offsets.
+// - More error-prone if extended to non-English alphabets or Unicode characters.
+// - Harder to maintain and understand at a glance.
+
+// Program 2 (using toLowerCase() and toUpperCase())
+// - Pros:
+// - Much easier to read and understand—no need to memorize ASCII values.
+// - More maintainable and beginner-friendly.
+// - Works reliably with Unicode and extended alphabets (not just A–Z).
+// - Cons:
+// - Slightly less efficient due to function calls, but the difference is negligible in real-world use.
+// - Doesn’t explicitly teach ASCII manipulation, so less educational for low-level learning.
+// Verdict
+// - For learning ASCII and character codes → Program 1 is better.
+// - For practical, clean, and maintainable code → Program 2 is better.
+// Since you’re refining your skills and aiming for clarity and scalability, Program 2 is the better choice in real-world projects.
+
 // ----------------------------------------------------------------------------------------------
