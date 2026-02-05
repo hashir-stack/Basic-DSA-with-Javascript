@@ -135,3 +135,46 @@
 //     j--;
 // }
 // console.log(isPalindrome ? "Palindrome" : "No Palindrome");
+
+// -------------------------------------------------------------------------------------------------------------------------
+// Problem 5: Toggle Case of Each Character
+
+// let s = prompt("Enter string");
+// let toggle = "";
+
+// for(let i = 0; i < s.length; i++) {
+//     let charCode = s.charCodeAt(i);
+    
+//     if(charCode >= 65 && charCode <= 90) {  // Capital
+//         toggle += String.fromCharCode(charCode + 32);  // +32 = small
+//     } 
+//     else if(charCode >= 97 && charCode <= 122) {  // Small
+//         toggle += String.fromCharCode(charCode - 32);  // -32 = capital
+//     } 
+//     else {
+//         toggle += s[i];  // Non-letter
+//     }
+// }
+// console.log(toggle); 
+
+//                                                  OR
+
+// Easy way to understand
+
+// let s = prompt("Enter string");
+//  let toggle = "";
+
+//  for(let i = 0; i < s.length; i++) {
+//      let charCode = s.charCodeAt(i);
+//     let strToggle = s[i];
+//     if(charCode >= 65 && charCode <= 90) {  // Capital
+//          toggle += strToggle.toLowerCase()  // +32 = small     } 
+//     }else if(charCode >= 97 && charCode <= 122) {  // Small
+//          toggle += strToggle.toUpperCase()  // -32 = capital
+//      } 
+//      else {
+//         toggle += s[i];  // Non-letter
+//      }
+//  }
+//  console.log(toggle);
+// ----------------------------------------------------------------------------------------------
