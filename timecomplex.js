@@ -77,3 +77,16 @@
 // Example: Outer loop n, inner loop i→n (n-1 + n-2 + ... ≈ n²/2 → O(n²)) 
 
 // ---------------------------------------------------------------------------------------------------------------
+
+// Avoiding TLE (Time Limit Exceeded)
+// Check constraints (n ≤ 10^x) to pick algorithm.  
+
+// n Constraint	Max Allowed Complexity
+// ≤ 10² (100)	O(n!) 
+// ≤ 10³ (1K)	O(n⁴) 
+// ≤ 10⁴ (10K)	O(n²) 
+// ≤ 10⁵ (100K)	O(n log n) 
+// ≤ 10⁶ (1M)	O(n) 
+// ≤ 10⁸ (100M)	O(log n) 
+// ≤ 10⁹ (1B)	O(1) 
+// Trick: n ≤ 10^x → max complexity ~ x (e.g., 10^4 → n²). 
