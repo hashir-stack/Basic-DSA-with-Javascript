@@ -4,7 +4,7 @@
 // Examples: Solving Sudoku (easy-medium) vs Rubik's Cube (tough) 
 // Finding factors of a number (easier) vs counting primes up to n (tougher)
 
-// ---------------------------------------------------------------------------------
+// ---------------------------------------------------------------------------------------------------------------------------------
 
 // Time Complexity: Key Definition -:
 
@@ -13,4 +13,16 @@
 // Measures operations/steps (e.g., loop from 1 to n = n operations) 
 // Always assume worst case (element found at the end in linear search)  
 // Focus on large inputs (small n doesn't need optimization; 1000s/billions of employees need systems)
-// --------------------------------------------------------------------------------------------
+// -----------------------------------------------------------------------------------------------------------------------------
+
+// Big O Notation (Most Important)
+
+// 3 notations exist, but use Big O (upper bound/worst case) for interviews.  
+
+// Notation	Represents	Example
+// Big O (O)	Worst case (upper bound)	Max 10 min trip 
+// Theta (Θ)	Average case	6-7 min trip 
+// Omega (Ω)	Best case (lower bound)	Min 10 min 
+// Why Big O? Interviews focus on worst case. 
+
+// -------------------------------------------------------------------------------------------------------------------
