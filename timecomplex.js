@@ -48,3 +48,18 @@
 // O(n!)	Factorial	n! operations (n=5 → 120 ops) 	Permutations 
 
 // -----------------------------------------------------------------------------------------------------------
+// Graph view (steepness shows growth):
+
+// Constant: Flat line 
+
+// Log n: Shallow curve 
+
+// Linear: Straight rise 
+
+// n log n: Between n & n² 
+
+// n²: Steeper 
+
+// Exponential/Factorial: Almost vertical
+
+// -----------------------------------------------------------------------------------------------------------
