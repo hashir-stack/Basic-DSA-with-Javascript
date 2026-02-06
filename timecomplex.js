@@ -26,3 +26,25 @@
 // Why Big O? Interviews focus on worst case. 
 
 // -------------------------------------------------------------------------------------------------------------------
+// Time Complexity Types (From Best to Worst)
+// Here's the hierarchy with examples:
+
+// Complexity	Name	When it Happens	Example
+// O(1)	Constant	1 operation, or fixed n (e.g., n=10 given)  	Sum formula: 
+// n
+// (
+// n
+// +
+// 1
+// )
+// /
+// 2
+// n(n+1)/2 
+// O(log n)	Logarithmic	n halves each step (binary search)  	n=500 → ~9 operations 
+// O(n)	Linear	Loop 1 to n, n operations  	Linear search (worst case) 
+// O(n log n)		Outer loop n × inner log n  	Sort + binary search per element
+// O(n²)	Quadratic	Nested loops (n × n)  	Strong number (digits loop × factorial loop) 
+// O(2ⁿ)	Exponential	2ⁿ operations (n=5 → 32 ops) 	Subsets, recursion 
+// O(n!)	Factorial	n! operations (n=5 → 120 ops) 	Permutations 
+
+// -----------------------------------------------------------------------------------------------------------
