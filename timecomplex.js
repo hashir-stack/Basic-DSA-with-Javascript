@@ -63,3 +63,17 @@
 // Exponential/Factorial: Almost vertical
 
 // -----------------------------------------------------------------------------------------------------------
+// Calculating Time Complexity from Code
+// Rules:
+
+// Single loop 1→n: O(n) 
+
+// Nested loops: Multiply (n × n = n²) 
+
+// Parallel loops: Add (n + n = 3n → O(n)) 
+
+// Equations: Drop constants/low-degree terms, keep highest (3n²/2 + n log n + n → O(n²))  
+
+// Example: Outer loop n, inner loop i→n (n-1 + n-2 + ... ≈ n²/2 → O(n²)) 
+
+// ---------------------------------------------------------------------------------------------------------------
