@@ -90,3 +90,21 @@
 // ≤ 10⁸ (100M)	O(log n) 
 // ≤ 10⁹ (1B)	O(1) 
 // Trick: n ≤ 10^x → max complexity ~ x (e.g., 10^4 → n²). 
+
+// ---------------------------------------------------------------------------------------------------------------------
+// Space Complexity
+// Extra/auxiliary space used (ignores input). 
+
+// O(1): Few variables (temp in loop dies each iteration)  
+
+// O(n): New array same size as input 
+
+// O(n²): 2D array 
+
+// Less focus than time (90% time, 10% space discussion) 
+
+// Examples:
+
+// Loop with temp var: O(1) 
+
+// Reverse array (new array): O(n)
