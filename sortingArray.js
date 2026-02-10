@@ -145,6 +145,52 @@
 // }
 
 // Selection Sort is easy to understand but not efficient for large datasets (O(n^2) time complexity).
+// ---------------------------------------------------------------------------------------------------------------------
+
+// Insertion Sort :-
+// Insertion Sort works like how you sort playing cards in your hand:
+// - You take one card at a time and insert it into the correct position among the already sorted cards.
+// - The left side of the array is always sorted, and you keep expanding it by inserting the next element in the right place.
+
+// Code Example (Ascending Order)
+// let arr = [10, 5, 1, 12, 3];
+// let n = arr.length;
+
+// for (let i = 1; i < n; i++) {
+//   let key = arr[i];
+//   let j = i - 1;
+
+//   // Move elements greater than key one step ahead
+//   while (j >= 0 && arr[j] > key) {
+//     arr[j + 1] = arr[j];
+//     j--;
+//   }
+//   arr[j + 1] = key;
+// }
+
+// console.log(arr); // [1, 3, 5, 10, 12]
+
+
+
+// Dry Run (Step by Step)
+// Array: [10, 5, 1, 12, 3]
+// - i = 1 (key = 5): Compare with 10 → shift 10 → [10, 10, 1, 12, 3]. Place 5 → [5, 10, 1, 12, 3].
+// - i = 2 (key = 1): Compare with 10 → shift 10 → [5, 10, 10, 12, 3]. Compare with 5 → shift 5 → [5, 5, 10, 12, 3]. Place 1 → [1, 5, 10, 12, 3].
+// - i = 3 (key = 12): Compare with 10 → no shift. Place 12 → [1, 5, 10, 12, 3].
+// - i = 4 (key = 3): Compare with 12 → shift 12 → [1, 5, 10, 12, 12]. Compare with 10 → shift 10 → [1, 5, 10, 10, 12]. Compare with 5 → shift 5 → [1, 5, 5, 10, 12]. Place 3 → [1, 3, 5, 10, 12].
+// Final sorted array: [1, 3, 5, 10, 12].
+
+// Descending Order
+// Just flip the comparison in the while loop:
+// while (j >= 0 && arr[j] < key) {
+//   arr[j + 1] = arr[j];
+//   j--;
+// }
+
+// Insertion Sort is stable, simple, and efficient for small or nearly sorted arrays.
+
+
+
 
 
 
