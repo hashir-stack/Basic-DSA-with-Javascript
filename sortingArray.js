@@ -87,6 +87,69 @@
 
 // ------------------------------------------------------------------------------------------------
 
+// Selection Sort:-
+
+// Selection Sort is one of the simplest sorting algorithms. The idea is:
+// - Find the minimum (or maximum) element in the unsorted part of the array.
+// - Place it at the beginning of the unsorted part.
+// - Repeat until the whole array is sorted.
+// i always start form zero index and j from i+1.
+
+// Key Steps (Example: [10, 5, 1, 12, 9])
+
+// Initial: [10, 5, 1, 12, 9] | Sorted: [], Unsorted: [10,5,1,12,9]
+
+// Phase 1 (i=0): Find min=1 (index=2) in unsorted → SWAP arr[0]↔arr[2]
+// Result: [1, 5, 10, 12, 9] | Sorted: [1], Unsorted: [5,10,12,9]  
+
+// Phase 2 (i=1): Find min=5 (index=1, already min) → No swap
+// Result: [1, 5, 10, 12, 9] | Sorted: [1,5], Unsorted: [10,12,9]
+
+// Phase 3 (i=2): Find min=9 (index=4) → SWAP arr[2]↔arr[4]
+// Result: [1, 5, 9, 12, 10] | Sorted: [1,5,9], Unsorted: [12,10]  
+
+// Phase 4 (i=3): Find min=10 → SWAP arr[3]↔arr[4]
+// Final: [1, 5, 9, 10, 12]  
+
+// Code Example (Ascending Order)
+// let arr = [10, 5, 1, 12, 3];
+// let n = arr.length;
+
+// for (let i = 0; i < n - 1; i++) {
+//   let minIndex = i;
+//   for (let j = i + 1; j < n; j++) {
+//     if (arr[j] < arr[minIndex]) {
+//       minIndex = j;
+//     }
+//   }
+//   // swap
+//   let temp = arr[minIndex];
+//   arr[minIndex] = arr[i];
+//   arr[i] = temp;
+// }
+
+// console.log(arr); // [1, 3, 5, 10, 12]
+
+// Dry Run (Step by Step)
+// Array: [10, 5, 1, 12, 3]
+// - Pass 1 (i=0): Minimum is 1. Swap with 10. → [1, 5, 10, 12, 3]
+// - Pass 2 (i=1): Minimum in rest is 3. Swap with 5. → [1, 3, 10, 12, 5]
+// - Pass 3 (i=2): Minimum in rest is 5. Swap with 10. → [1, 3, 5, 12, 10]
+// - Pass 4 (i=3): Minimum in rest is 10. Swap with 12. → [1, 3, 5, 10, 12]
+// Sorted array achieved.
+
+// Descending Order
+// Just flip the comparison:
+// if (arr[j] > arr[maxIndex]) {
+//   maxIndex = j;
+// }
+
+// Selection Sort is easy to understand but not efficient for large datasets (O(n^2) time complexity).
+
+
+
+
+
 
 
 
