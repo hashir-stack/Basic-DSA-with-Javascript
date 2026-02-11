@@ -87,4 +87,7 @@
 
 // console.log(fibonacci(6)); // Output: 8 [0,1,1,2,3,5,8]
 
+// Note
+// Key: Always base case to prevent infinite calls (stack overflow)
+
 
