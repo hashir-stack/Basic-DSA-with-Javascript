@@ -52,3 +52,12 @@
 // }
 // Prints backward via backtracking.
 
+// -------------------------------------------------------------------------------------------------------------------------------
+// Sum 1 to n
+
+// function sum(n) {
+//   if (n === 1) return 1;  // Base
+//   return n + sum(n - 1);  // Return propagates value
+// }
+// Unwinds add values upward.
+
