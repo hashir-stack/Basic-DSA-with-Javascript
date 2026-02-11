@@ -70,4 +70,21 @@
 //   return n * fact(n - 1);
 // }
 // --------------------------------------------------------------------------------------------------------------------------------
+// Fibonacci sequence or series
+
+// Each number is the sum of the two preceding ones, starting from 0 and 1.(last two elements added to get the thrid element)
+
+// Example
+
+// Recursive Implementation
+
+// function fibonacci(n) {
+//   if (n < 2) {   // base case
+//     return n;
+//   }
+//   return fibonacci(n - 1) + fibonacci(n - 2);  // recursive case
+// }
+
+// console.log(fibonacci(6)); // Output: 8 [0,1,1,2,3,5,8]
+
 
