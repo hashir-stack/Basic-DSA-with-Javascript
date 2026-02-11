@@ -43,5 +43,12 @@
 // Prints forward: 5 4 3 2 1.
 // ----------------------------------------------------------------------------------------------------------------------------
 
- 
+ // 3. Print 1 to n (Backtracking)
+
+// function print(n) {
+//   if (n === 0) return;
+//   print(n - 1);  // Recurse first
+//   console.log(n);  // After recurse (unwind)
+// }
+// Prints backward via backtracking.
 
