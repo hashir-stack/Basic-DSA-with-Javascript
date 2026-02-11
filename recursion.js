@@ -18,3 +18,18 @@
 // Prints during forward pass (5 pushes, then pops).
 //----------------------------------------------------------------------------------------------------------------------------------
 
+// Key Points
+// - Base Case: Prevents infinite recursion.
+// - Recursive Case: Breaks the problem into smaller parts.
+// - Call Stack: Each recursive call is stored until the base case is reached, then results are returned back up.
+
+// Pros
+// - Elegant solutions for problems like tree traversal, sorting, and mathematical sequences.
+// - Makes code more readable for divide-and-conquer problems.
+
+// Cons
+// - Can be less efficient due to stack usage.
+// - Risk of stack overflow if the base case is missing or incorrect.
+
+// ----------------------------------------------------------------------------------------------------------------------------------
+
