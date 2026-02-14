@@ -85,3 +85,11 @@
 // vs Linear Search (O(n)): Binary wins big on large sorted data
 
 // -------------------------------------------------------------------------------------------------------------------
+
+// Real-World Uses
+
+// Databases (e.g., Myntra): Search millions of sorted customer IDs fast.  
+
+// Sorted names/records: Sort first, then binary search for quick lookups. 
+
+// Great for fast data access in development & interviews
