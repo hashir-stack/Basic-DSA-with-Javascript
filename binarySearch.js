@@ -71,3 +71,17 @@
 // let arr = [2, 5, 25, 67, 89, 100, 125];  // Sorted!
 // console.log(binarySearch(arr, 67));  // 3 (index)
 // Output examples: 67 → index 3; 9 → index 5; Invalid → -1. 
+
+// ---------------------------------------------------------------------------------------------------------------------
+// Time & Space Complexity
+// Time: 
+// O(log n)
+// O(logn) – halves search space each step (e.g., 100 → 7 steps; 20,000 → 14 steps).  
+
+// Space: 
+// O(1)
+// O(1) – no extra space used. 
+
+// vs Linear Search (O(n)): Binary wins big on large sorted data
+
+// -------------------------------------------------------------------------------------------------------------------
