@@ -42,3 +42,32 @@
 // mid=3 (still >25) → adjust window → found at index 7.  
 
 // Not Found Case: If first > last after loop, return -1.
+
+// ----------------------------------------------------------------------------------------------------------------------------------
+
+// JavaScript Code Implementation (Iterative)
+
+// function binarySearch(arr, target) {
+//     let first = 0;
+//     let last = arr.length - 1;
+//     let index = -1;  // Default not found
+
+//     while (first <= last) {
+//         let mid = Math.floor((first + last) / 2);
+        
+//         if (arr[mid] == target) {
+//             index = mid;
+//             break;
+//         } else if (arr[mid] > target) {
+//             last = mid - 1;  // Search left
+//         } else {
+//             first = mid + 1;  // Search right
+//         }
+//     }
+//     return index;
+// }
+
+// // Usage
+// let arr = [2, 5, 25, 67, 89, 100, 125];  // Sorted!
+// console.log(binarySearch(arr, 67));  // 3 (index)
+// Output examples: 67 → index 3; 9 → index 5; Invalid → -1. 
