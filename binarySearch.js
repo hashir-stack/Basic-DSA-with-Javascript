@@ -72,6 +72,16 @@
 // console.log(binarySearch(arr, 67));  // 3 (index)
 // Output examples: 67 → index 3; 9 → index 5; Invalid → -1. 
 
+// 🔎 Explanation
+// - We start with two pointers: start and end.
+// - Calculate mid as the middle index.
+// - Compare arr[mid] with target:
+// - If equal → return mid.
+// - If smaller → move start to mid + 1.
+// - If larger → move end to mid - 1.
+// - Repeat until start > end.
+
+
 // ---------------------------------------------------------------------------------------------------------------------
 // Time & Space Complexity
 // Time: 
