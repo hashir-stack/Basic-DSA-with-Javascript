@@ -8,3 +8,54 @@
 // - Combine: The merge step ensures the final array is sorted
 
 // --------------------------------------------------------------------------------------------------------------
+
+// 2. Merge Step (Conquer) - The Key Insight  
+
+// Goal: Merge two sorted partitions in the same array into one sorted section using extra space.
+
+// Steps:
+
+// Given array with first, mid, last pointers (left partition: first to mid; right: mid+1 to last).  
+
+// Create temp array of size last - first + 1.  
+
+// Use 3 pointers:
+
+// i = first (left start)
+
+// j = mid + 1 (right start)
+
+// k = 0 (temp index)  
+
+// Compare arr[i] and arr[j], copy smaller to temp[k], increment pointers.  
+
+// When one pointer exhausts (i > mid or j > last), copy remaining from other partition.  
+
+// Copy temp back to original array (first to last).  
+
+// Example (array: [1,2,8,9,4,5,12,20]):
+
+// Left: [1,2,8,9]  Right: [4,5,12,20]
+// Temp: [1,2,4,5,8,9,12,20] → Copy back   
+// Merge Function Code:
+
+// function conquer(arr, first, mid, last) {
+//     let temp = new Array(last - first + 1);
+//     let i = first, j = mid + 1, k = 0;
+    
+//     while (i <= mid && j <= last) {
+//         if (arr[i] <= arr[j]) {
+//             temp[k++] = arr[i++];
+//         } else {
+//             temp[k++] = arr[j++];
+//         }
+//     }
+    
+//     while (i <= mid) temp[k++] = arr[i++];
+//     while (j <= last) temp[k++] = arr[j++];
+    
+//     // Copy back
+//     for (let p = 0, t = first; p < temp.length; p++, t++) {
+//         arr[t] = temp[p];
+//     }
+// }   
