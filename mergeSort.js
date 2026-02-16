@@ -59,3 +59,27 @@
 //         arr[t] = temp[p];
 //     }
 // }   
+
+// --------------------------------------------------------------------------------------------------------
+
+// 3. Divide Step (Recursion)  
+// Process:
+
+// Calculate mid = Math.floor((first + last) / 2).  
+
+// Base case: If first >= last, return (single element is sorted).  
+
+// Recurse: divide(arr, first, mid) → divide(arr, mid+1, last).  
+
+// Backtrack: Merge sorted partitions
+
+// Full Divide Function:
+
+// function divide(arr, first, last) {
+//     if (first >= last) return;        (Base Case)
+    
+//     let mid = Math.floor((first + last) / 2);
+//     divide(arr, first, mid);
+//     divide(arr, mid + 1, last);
+//     conquer(arr, first, mid, last);
+// }
