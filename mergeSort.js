@@ -112,3 +112,49 @@
 // Space: O(n) (temp array per merge).
 
 // Why Efficient? Consistent performance, stable sort, predictable. 
+// 
+// ---------------------------------------------------------------------------------------------------------
+// Full code for solving the problem :-
+
+// let arr1 = [38, 27, 43, 3, 9, 82, 10];
+
+// function mergere (arr,first,mid,last){
+//     let temp = new Array(last - first +1);
+//     let i = first; j=mid+1 ;k=0;
+
+//     while(i <= mid && j<= last){
+//         if(arr[i]< arr[j]){
+//             temp[k] = arr[i]
+//             k++;i++
+//         }else{
+//             temp[k] = arr[j];
+//             k++;j++
+//         }
+//     }
+//     while(i <= mid){
+//         temp[k] = arr[i]
+//             k++;i++
+//     }
+//     while(j <= last){
+//         temp[k] = arr[j]
+//             k++;j++
+//     }
+
+//     let p =0; t =first;
+//     while(p < temp.length){
+//         arr[t] = temp[p];
+//         t++;p++
+//     }
+// }
+
+// function divide (arr ,first ,last){
+//     if(first>= last) return
+//     let mid  = Math.floor((last+first)/2);
+//     divide(arr,first,mid) //left side
+//     divide(arr,mid+1,last) //right
+//     mergere(arr,first,mid,last);
+//     return arr;
+// }
+
+// console.log("Unsorted Array =>",arr1);
+// console.log("Sorted array =>",divide(arr1,0,arr1.length-1))
