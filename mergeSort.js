@@ -104,3 +104,11 @@
 // Merge pairs → larger merges → fully sorted 
 
 // ----------------------------------------------------------------------------------------------------------
+// 5. Time & Space Complexity
+
+// Divide: O(logn) levels (halving each time, like binary search).
+// Merge:O(n) work per level (linear scan). 
+// Total:O(nlogn) (all cases: best, average, worst).
+// Space: O(n) (temp array per merge).
+
+// Why Efficient? Consistent performance, stable sort, predictable. 
