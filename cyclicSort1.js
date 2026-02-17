@@ -62,6 +62,15 @@
 
 // console.log(cyclicSort(arr1));
 
+// For 0 to n-1: Use correctIdx = arr[i]               (no -1)  
+
+// Complexity
+
+// Time: O(n)
+// Space: // O(1)
+
+ 
+
 
 
 
