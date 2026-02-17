@@ -34,3 +34,52 @@
 // i=0: 1 should be at index 0 ✓ → i++
 // i=1: 5 should be at index 4 → swap → [1,2,8,1,5,6,4,3]
 // ...continues until sorted: [1,2,3,4,5,6,7,8] 
+
+// --------------------------------------------------------------------------------------------------------------------------------------
+
+// Question :-
+
+// Sort the array which is unsorted arr=[6,5,8,1,2,1,4,3]
+
+// Solution :-
+
+// let arr1 = [6,5,8,1,2,1,4,3] ;
+
+// function cyclicSort(arr) {
+//     let i = 0;
+//     while (i < arr.length) {
+//         let correctIdx = arr[i] - 1;
+//         if (arr[i] != arr[correctIdx]) {
+//             let temp = arr[i];
+//             arr[i] = arr[correctIdx];
+//             arr[correctIdx] = temp;
+//         } else {
+//             i++;
+//         }
+//     }
+//     return arr;
+// }
+
+// console.log(cyclicSort(arr1));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
