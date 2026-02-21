@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traversing Array</title>
+</head>
+<body>
+    <input type="text" id="element" placeholder="Enter the index to get the Element...">
+    <button onclick="elementGet()">Get Element</button>
+
+    <script>
+        let data = [22,45,7,15,10,0,80,79,99,16,1,2,3,6];
+
+        function elementGet (){
+            let el = document.getElementById("element").value;
+            if(el>0 && el<data.length && typeof parseInt(el) ==="number"){
+                alert(data[el])
+            }else{
+                alert("Please enter valid index...")
+            }
+        }
+
+    </script>
+</body>
+</html>
