@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merging Two Array</title>
+</head>
+<body>
+    <script>
+        let data1 = [11,2,32,45,781,4,5];
+        let data2 = [25,15,35,5,45];
+        let data3 =[];
+
+        for(let i=0; i<= data1.length-1;i++){
+            data3[i] = data1[i];
+        }
+
+        for(let i=0 ; i <=data2.length-1;i++){
+            data3[data1.length + i] = data2[i];
+        }
+        console.log(data3);
+
+        // inBuilt function
+        // data1.reverse();
+        // console.log(data1);
+
+        // data3 = [...data1, ...data2];
+        // console.log(data3);
+
+    </script>
+</body>
+</html>
