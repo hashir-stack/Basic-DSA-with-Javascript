@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Indirect Recursion</title>
+  </head>
+
+  <p>
+    Indirect recursion in JavaScript happens when two or more functions call
+    each other in a cycle, instead of a single function calling itself directly.
+    It’s a mutual recursion pattern where the cycle continues until a base
+    condition breaks the loop, preventing infinite calls. 
+  </p>
+  <p>
+    🔹 Key Concept -
+    Direct recursion: A function calls itself directly. - Indirect recursion:
+    Function A calls Function B, and Function B calls Function A (or more
+    functions in a chain). This pattern is useful when breaking down problems
+    into smaller, alternating responsibilities between functions.
+  </p>
+  <body>
+    <script>
+        let totalMoney = 100;
+        let totalApple = 0 ;
+
+        function buyApple(money){
+            if(money > 0){
+                console.log(`I have ${totalApple} and Rs.${money} left`);
+                buyMore(money);
+            }else{
+                console.log("Not enough money left to buy apple" ,"You have ",totalApple,"apples");
+            }
+        }
+
+        function buyMore(money){
+            totalApple++;
+            buyApple(money-10);
+        }
+
+        buyApple(totalMoney);
+    </script>
+  </body>
+</html>
